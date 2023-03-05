@@ -10,6 +10,7 @@ const insertionSort = (array) => {
     while (position >= 0) {
       if (array[position] > tempValue) {
         array[position + 1] = array[position];
+        console.log(array);
         position--;
       } else {
         //if we encounter a value that is greater or equal to the temp value, then we can move on to the next
