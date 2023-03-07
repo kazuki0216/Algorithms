@@ -7,6 +7,13 @@ const insertionSort = (array) => {
     //position will always start from i - 1 because value to the left will keep sorting.
     let position = i - 1;
 
+    //position is 6
+    //in the increment, array[6] which is 8 is bigger than position[7] temp val which is 2
+    //so it swaps.
+    //after swapping, it decrements.
+    //position is 5.
+
+    //🚨then, array[position + 1] which is 6, becomes temp,value.
     while (position >= 0) {
       if (array[position] > tempValue) {
         array[position + 1] = array[position];
